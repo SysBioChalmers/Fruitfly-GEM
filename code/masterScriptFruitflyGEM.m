@@ -78,6 +78,6 @@ rxnsToAdd.subSystems = cellfun(@(s) {{s}}, rxnsToAdd.subSystems);
 
 fruitflyGEM.id = 'Fruitfly-GEM';
 save('../model/Fruitfly-GEM.mat', 'fruitflyGEM');
-writeHumanYaml(fruitflyGEM, '../model/Fruitfly-GEM.mat');
+writeHumanYaml(fruitflyGEM, '../model/Fruitfly-GEM.yml');
 exportModel(fruitflyGEM, '../model/Fruitfly-GEM.xml');
 
