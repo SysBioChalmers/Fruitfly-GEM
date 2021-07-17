@@ -36,7 +36,7 @@ Manuscript under preparation
 
 |Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|:-----:|
-|_Drosophila melanogaster_ |   Human-GEM |  12072  | 8164 | 2048 |
+|_Drosophila melanogaster_ |   Human-GEM |  12056  | 8132 | 2049 |
 
 
 ## Installation
