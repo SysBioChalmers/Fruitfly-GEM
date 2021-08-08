@@ -52,7 +52,7 @@ This repository contains the latest version of Fruitfly-GEM, a fruit fly genome-
 
 
 ### Installation Instructions
-* Clone the [master branch](https://github.com/SysBioChalmers/Fruitfly-GEM/tree/master) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Fruitfly-GEM/releases/latest).
+* Clone the [main branch](https://github.com/SysBioChalmers/Fruitfly-GEM/tree/main) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Fruitfly-GEM/releases/latest).
 * Add the directory to your MATLAB path (instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com)).
 
 
@@ -60,7 +60,7 @@ This repository contains the latest version of Fruitfly-GEM, a fruit fly genome-
 
 #### Loading/saving the model
 
-`Fruitfly-GEM.mat` (Recommended if on `master` branch)
+`Fruitfly-GEM.mat` (Recommended if on `main` branch)
 * Load and save using the built-in MATLAB `load()` and `save()` functions.
 
 `Fruitfly-GEM.xml` (SBML format)
