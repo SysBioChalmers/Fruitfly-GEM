@@ -48,5 +48,6 @@ fruitflyGEM = annotateGEM(fruitflyGEM,'../model',{'rxn','met'});  % add annotati
 fruitflyGEM.id = regexprep(fruitflyGEM.id,'-','');  % remove dash from model ID since it causes problems with SBML I/O
 save('../model/Fruitfly-GEM.mat', 'fruitflyGEM');
 exportYaml(fruitflyGEM, '../model/Fruitfly-GEM.yml');
+fruitflyGEM.genes = strcat('G_',fruitflyGEM.genes);
 exportModel(fruitflyGEM, '../model/Fruitfly-GEM.xml');
 
