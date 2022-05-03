@@ -11,8 +11,7 @@ This repository contains the latest version of Fruitfly-GEM, a fruit fly genome-
 
 #### Citation
 
-Manuscript under preparation
-
+ > H. Wang, J. L. Robinson, P. Kocabaş, J. Gustafsson, M. Anton, P.-E. Cholley, et al. Genome-scale metabolic network reconstruction of model animals as a platform for translational research. _PNAS_ 118, e2102344118 (2021). [doi.org/10.1073/pnas.2102344118](https://doi.org/10.1073/pnas.2102344118)
 
 #### Model Keywords
 
@@ -53,7 +52,7 @@ Manuscript under preparation
 
 
 ### Installation Instructions
-* Clone the [master branch](https://github.com/SysBioChalmers/Fruitfly-GEM/tree/master) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Fruitfly-GEM/releases/latest).
+* Clone the [main branch](https://github.com/SysBioChalmers/Fruitfly-GEM/tree/main) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Fruitfly-GEM/releases/latest).
 * Add the directory to your MATLAB path (instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com)).
 
 
@@ -61,7 +60,7 @@ Manuscript under preparation
 
 #### Loading/saving the model
 
-`Fruitfly-GEM.mat` (Recommended if on `master` branch)
+`Fruitfly-GEM.mat` (Recommended if on `main` branch)
 * Load and save using the built-in MATLAB `load()` and `save()` functions.
 
 `Fruitfly-GEM.xml` (SBML format)

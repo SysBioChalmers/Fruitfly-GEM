@@ -44,7 +44,10 @@ if isequal(rxnAssoc.rxns, fruitflyGEM.rxns) && isequal(metAssoc.mets, fruitflyGE
     exportTsvFile(metAssoc,'../model/metabolites.tsv');
 end
 
+fruitflyGEM = annotateGEM(fruitflyGEM,'../model',{'rxn','met'});  % add annotation data to structure
+fruitflyGEM.id = regexprep(fruitflyGEM.id,'-','');  % remove dash from model ID since it causes problems with SBML I/O
 save('../model/Fruitfly-GEM.mat', 'fruitflyGEM');
 exportYaml(fruitflyGEM, '../model/Fruitfly-GEM.yml');
+fruitflyGEM.genes = strcat('G_',fruitflyGEM.genes);
 exportModel(fruitflyGEM, '../model/Fruitfly-GEM.xml');
 
