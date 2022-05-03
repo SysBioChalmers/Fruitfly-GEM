@@ -35,7 +35,7 @@ This repository contains the latest version of Fruitfly-GEM, a fruit fly genome-
 
 |Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|:-----:|
-|_Drosophila melanogaster_ |   Human-GEM |  12056  | 8132 | 2049 |
+|_Drosophila melanogaster_ |   Human-GEM |  12038  | 8117 | 1810 |
 
 
 ## Installation
