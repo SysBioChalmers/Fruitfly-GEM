@@ -19,7 +19,7 @@ addpath(genpath('../../Fruitfly-GEM/'));
 %% Prepare Fruitfly ortholog pairs and species-specific network
 
 % get ortholog pairs from human to fruitfly
-fruitflyOrthologPairs = extractAllianceGenomeOrthologs('human2FruitflyOrthologs.json');
+fruitflyOrthologPairs = extractAllianceGenomeOrthologs('human2FruitflyOrthologs.tsv');
 
 % load species-specific rxns and mets
 rxnsToAdd = importTsvFile('fruitflySpecificRxns.tsv');
