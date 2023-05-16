@@ -44,6 +44,7 @@ if isequal(rxnAssoc.rxns, fruitflyGEM.rxns) && isequal(metAssoc.mets, fruitflyGE
     exportTsvFile(metAssoc,'../model/metabolites.tsv');
 end
 
+fruitflyGEM.geneShortNames = fruitflyGEM.genes;
 save('../model/Fruitfly-GEM.mat', 'fruitflyGEM');
 exportYaml(fruitflyGEM, '../model/Fruitfly-GEM.yml');
 fruitflyGEM = annotateGEM(fruitflyGEM,'../model',{'rxn','met'});  % add annotation data to structure
