@@ -19,7 +19,7 @@ addpath(genpath('../../Fruitfly-GEM/'));
 %% Prepare Fruitfly ortholog pairs and species-specific network
 
 % get ortholog pairs from human to fruitfly
-fruitflyOrthologPairs = extractAllianceGenomeOrthologs('human2FruitflyOrthologs.json');
+fruitflyOrthologPairs = extractAllianceGenomeOrthologs('human2FruitflyOrthologs.tsv');
 
 % load species-specific rxns and mets
 rxnsToAdd = importTsvFile('fruitflySpecificRxns.tsv');
@@ -44,6 +44,7 @@ if isequal(rxnAssoc.rxns, fruitflyGEM.rxns) && isequal(metAssoc.mets, fruitflyGE
     exportTsvFile(metAssoc,'../model/metabolites.tsv');
 end
 
+fruitflyGEM.geneShortNames = fruitflyGEM.genes;
 save('../model/Fruitfly-GEM.mat', 'fruitflyGEM');
 exportYaml(fruitflyGEM, '../model/Fruitfly-GEM.yml');
 fruitflyGEM = annotateGEM(fruitflyGEM,'../model',{'rxn','met'});  % add annotation data to structure
