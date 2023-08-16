@@ -28,7 +28,7 @@ metsToAdd = importTsvFile('fruitflySpecificMets.tsv');
 
 %% Generate Fruitfly-GEM
 [fruitflyGEM, speciesSpecNetwork, gapfillNetwork]=updateAnimalGEM(...
-    fruitflyOrthologPairs,rxnsToAdd,metsToAdd,'Fruitfly-GEM');
+    fruitflyOrthologPairs,rxnsToAdd,metsToAdd,'Fruitfly-GEM',false);
 
 
 %% Update annotations
