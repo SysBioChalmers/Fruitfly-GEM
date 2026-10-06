@@ -35,7 +35,9 @@ This repository contains the latest version of Fruitfly-GEM, a fruit fly genome-
 
 |Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|:-----:|
-|_Drosophila melanogaster_ |   Human-GEM |  11996  | 8121 | 1810 |
+|_Drosophila melanogaster_ |   Human-GEM 2.1.0 |  11631  | 8069 | 1728 |
+
+The model is generated from [Human-GEM](https://github.com/SysBioChalmers/Human-GEM) release 2.1.0 with `code/animalGEM/generateAnimalGEM.py` in the Human-GEM repository; see [code/README.md](code/README.md).
 
 
 ## Installation
