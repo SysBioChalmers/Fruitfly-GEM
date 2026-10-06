@@ -11182,6 +11182,12 @@
     - charge: 0.0
     - formula: C19H32O2
   - !!omap
+    - id: MAM01066c
+    - name: 5alpha-cholesta-7,24-dien-3beta-ol
+    - compartment: c
+    - charge: 0.0
+    - formula: C27H44O
+  - !!omap
     - id: MAM01069c
     - name: 5-alpha-dihydrotestosterone
     - compartment: c
@@ -15789,12 +15795,6 @@
     - compartment: r
     - charge: 0.0
     - formula: C27H46O3
-  - !!omap
-    - id: MAM01449c
-    - name: cholestenol
-    - compartment: c
-    - charge: 0.0
-    - formula: C27H46O
   - !!omap
     - id: MAM01450c
     - name: cholesterol
@@ -50683,6 +50683,26 @@
     - references: PMID:14967823
     - confidence_score: 0.0
   - !!omap
+    - id: MAR00145
+    - name: fatty acyl-CoA desaturase (N-C18:2CoA -> N-C18:3CoA)
+    - metabolites: !!omap
+      - MAM00108c: 1.0
+      - MAM02039c: -1.0
+      - MAM02040c: 2.0
+      - MAM02390c: -1.0
+      - MAM02552c: 1.0
+      - MAM02553c: -1.0
+      - MAM02630c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - subsystem:
+      - Fatty acid biosynthesis
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.19.1
+    - confidence_score: 0.0
+    - notes: reaction added by gap filling
+  - !!omap
     - id: MAR00146
     - name: stearoyl-CoA desaturase (N-C18:0CoA -> N-C18:1CoA)
     - metabolites: !!omap
@@ -50758,6 +50778,12 @@
       - MAM02647c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Fatty acid biosynthesis
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.19.3
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR00153
@@ -51032,20 +51058,6 @@
       - Transport reactions
     - references: PMID:12856180;PMID:12883891;PMID:11023036;PMID:1554704;PMID:18021224;PMID:4553030;PMID:793184;PMID:8725559;PMID:8781017;PMID:12739169
     - confidence_score: 0.0
-  - !!omap
-    - id: MAR00181
-    - name: fatty acyl-CoA desaturase (N-C20:3CoA -> N-C20:4CoA)
-    - metabolites: !!omap
-      - MAM01364c: 1.0
-      - MAM01697c: -1.0
-      - MAM02039c: -1.0
-      - MAM02040c: 2.0
-      - MAM02552c: 1.0
-      - MAM02553c: -1.0
-      - MAM02630c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - notes: reaction added by gap filling
   - !!omap
     - id: MAR00182
     - name: transport of decanoyl-CoA (cytosol to mitochondria)
@@ -68816,6 +68828,13 @@
       - MAM02933c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 1 (Bloch pathway)
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.17
+    - references: PMID:10666321;PMID:10484604;PMID:10666321;PMID:11108725;PMID:7946524;PMID:8993542
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01471
@@ -68866,6 +68885,13 @@
       - MAM02932c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 1 (Bloch pathway)
+    - annotation: !!omap
+      - ec-code:
+        - 5.4.99.7
+    - references: PMID:8593458;PMID:5918048;PMID:10484604;PMID:11108725;PMID:7639730;PMID:7946524;PMID:8993542
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01474
@@ -69143,17 +69169,24 @@
         - 1.14.18.9
     - confidence_score: 0.0
   - !!omap
-    - id: MAR01496
+    - id: MAR01495
     - name: NAD(P) dependent steroid dehydrogenase-like
     - metabolites: !!omap
       - MAM00809c: 1.0
       - MAM00953c: -1.0
       - MAM01596c: 1.0
       - MAM02039c: 1.0
-      - MAM02552c: -1.0
-      - MAM02553c: 1.0
+      - MAM02554c: -1.0
+      - MAM02555c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 1 (Bloch pathway)
+    - annotation: !!omap
+      - ec-code:
+        - 1.1.1.170
+    - references: PMID:10369263;PMID:11969204;PMID:12837764;PMID:14506130;PMID:7946524
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01497
@@ -69169,6 +69202,13 @@
       - MAM02630c: -3.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.1
+    - references: PMID:10405341
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01499
@@ -69193,6 +69233,13 @@
       - MAM02555c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 1 (Bloch pathway)
+    - annotation: !!omap
+      - ec-code:
+        - 1.1.1.270
+    - references: PMID:11969204;PMID:;PMID:10544267;PMID:12732193;PMID:12829805
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01502
@@ -69266,6 +69313,13 @@
       - MAM04082c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 1 (Bloch pathway)
+    - annotation: !!omap
+      - ec-code:
+        - 1.1.1.170
+    - references: PMID:14506130
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01506
@@ -69312,6 +69366,13 @@
       - MAM04082c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 1 (Bloch pathway)
+    - annotation: !!omap
+      - ec-code:
+        - 1.1.1.270
+    - references: PMID:11969204
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01510
@@ -69326,6 +69387,13 @@
       - MAM02805r: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.19.20
+    - references: PMID:10344195
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01511
@@ -69345,6 +69413,22 @@
         - 1.4.3.14
     - references: PMID:10727241;PMID:11483512;PMID:12802054;PMID:15208306;PMID:9356492;PMID:9468317
     - confidence_score: 0.0
+  - !!omap
+    - id: MAR01512
+    - name: delta8,24-Cholestadien-3beta-ol delta7-delta8-isomerase
+    - metabolites: !!omap
+      - MAM01066c: 1.0
+      - MAM03158c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 1 (Bloch pathway)
+    - annotation: !!omap
+      - ec-code:
+        - 5.3.3.5
+    - references: PMID:10391218;PMID:10391219;PMID:12133002;PMID:2422166;PMID:7946524
+    - confidence_score: 0.0
+    - notes: reaction added by gap filling
   - !!omap
     - id: MAR01513
     - name: M4B Phosphoethanolaminyl Transferase, Endoplasmic Reticulum
@@ -69584,6 +69668,25 @@
     - references: PMID:9741684;PMID:9054372
     - confidence_score: 0.0
   - !!omap
+    - id: MAR01533
+    - name: lanosterol D24-reductase
+    - metabolites: !!omap
+      - MAM01066c: -1.0
+      - MAM02039c: -1.0
+      - MAM02343c: 1.0
+      - MAM02554c: 1.0
+      - MAM02555c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol biosynthesis 2
+    - annotation: !!omap
+      - ec-code:
+        - 1.3.1.72
+    - references: PMID:7946524
+    - confidence_score: 0.0
+    - notes: reaction added by gap filling
+  - !!omap
     - id: MAR01537
     - name: Transport of Ammonium ion, Nuclear
     - metabolites: !!omap
@@ -69766,15 +69869,6 @@
         - 1.14.18.9
     - confidence_score: 0.0
   - !!omap
-    - id: MAR01553
-    - name: 5alpha-Cholest-7-en-3beta-ol delta7-delta8-isomerase
-    - metabolites: !!omap
-      - MAM01449c: -1.0
-      - MAM02343c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - notes: reaction added by gap filling
-  - !!omap
     - id: MAR01554
     - name: Nicotinate-Nucleotide Adenylyltransferase, Mitochondrial
     - metabolites: !!omap
@@ -69948,18 +70042,6 @@
         - 1.2.1.5
     - references: PMID:11790142;PMID:2060039;PMID:2549038;PMID:4387261;PMID:8155713;PMID:8328987
     - confidence_score: 0.0
-  - !!omap
-    - id: MAR01570
-    - name: 24-dehydrocholesterol reductase (zymosterol)
-    - metabolites: !!omap
-      - MAM01449c: 1.0
-      - MAM02039c: -1.0
-      - MAM02554c: 1.0
-      - MAM02555c: -1.0
-      - MAM03158c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - notes: reaction added by gap filling
   - !!omap
     - id: MAR01572
     - name: transport of HMG-CoA (cytosol to mitochondria)
@@ -71554,6 +71636,13 @@
       - MAM02933r: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Cholesterol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 2.5.1.21
+    - references: PMID:1318747
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR01717
@@ -80310,6 +80399,12 @@
       - MAM02630c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Fatty acid desaturation (even-chain)
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.19.-
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR02371
@@ -82198,6 +82293,12 @@
       - MAM02630c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Omega-3 fatty acid metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.19.3
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR02509
@@ -104928,6 +105029,13 @@
       - MAM02990c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Pyrimidine metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.8.1.9
+    - references: PMID:10462449;PMID:11060283;PMID:15110392
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR03933
@@ -118017,6 +118125,10 @@
       - MAM02171e: 1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Transport reactions
+    - references: PMID:10785372;PMID:1313850;PMID:1992775;PMID:3085711;PMID:7822436;PMID:8240303
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR04862
@@ -121741,6 +121853,9 @@
       - MAM03082c: 43.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Protein assembly
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR05152
@@ -141783,6 +141898,13 @@
       - MAM02630r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Vitamin E metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.94
+    - references: PMID:11997390
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06467
@@ -141797,7 +141919,14 @@
       - MAM02630r: -2.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - notes: reaction added by gap filling
+    - subsystem:
+      - Vitamin E metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.94
+    - references: PMID:11997390;PMID:15753130;PMID:18182499
+    - confidence_score: 0.0
+    - notes: Human liver microsomes form 13'-carboxychromanols from 13'-hydroxychromanols with NADPH alone; NAD+ increases the yield (PMID:11997390, PMID:15753130). CYP4F2 oxidises omega-hydroxy fatty acids to dicarboxylic acids (PMID:18182499), but for those substrates an NAD+-dependent alcohol and aldehyde dehydrogenase route (ALDH3A2) predominates; this route has not been shown for tocopherols.;reaction added by gap filling
   - !!omap
     - id: MAR06468
     - name: transport of 13-carboxy-gamma-tocopherol (cytosol to endoplasmic reticulum)
@@ -141981,6 +142110,13 @@
       - MAM02630r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Vitamin E metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.94
+    - references: PMID:11997390
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06479
@@ -141995,7 +142131,14 @@
       - MAM02630r: -2.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - notes: reaction added by gap filling
+    - subsystem:
+      - Vitamin E metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.94
+    - references: PMID:11997390;PMID:15753130;PMID:18182499
+    - confidence_score: 0.0
+    - notes: Human liver microsomes form 13'-carboxychromanols from 13'-hydroxychromanols with NADPH alone; NAD+ increases the yield (PMID:11997390, PMID:15753130). CYP4F2 oxidises omega-hydroxy fatty acids to dicarboxylic acids (PMID:18182499), but for those substrates an NAD+-dependent alcohol and aldehyde dehydrogenase route (ALDH3A2) predominates; this route has not been shown for tocopherols.;reaction added by gap filling
   - !!omap
     - id: MAR06480
     - name: transport of 13-carboxy-alpha-tocopherol (cytosol to endoplasmic reticulum)
@@ -144287,6 +144430,12 @@
       - MAM02834c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06635
@@ -144392,6 +144541,13 @@
       - MAM02834c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - references: PMID:9581846
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06642
@@ -144406,6 +144562,13 @@
       - MAM02834r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - references: PMID:9581846
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06644
@@ -144476,6 +144639,13 @@
       - MAM02832r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.1
+    - references: PMID:9647871
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06651
@@ -144485,6 +144655,9 @@
       - MAM02832c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06652
@@ -144519,6 +144692,13 @@
       - MAM02630r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.1
+    - references: PMID:9647871
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06655
@@ -144533,6 +144713,12 @@
       - MAM02630c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.1
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06656
@@ -144547,6 +144733,12 @@
       - MAM02630r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.14.1
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06657
@@ -144902,6 +145094,13 @@
       - MAM02630c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - references: PMID:9647871
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06678
@@ -144916,6 +145115,13 @@
       - MAM02630r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - references: PMID:9647871
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06679
@@ -145046,6 +145252,13 @@
       - MAM02630c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - references: PMID:11221542
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06688
@@ -145243,6 +145456,13 @@
       - MAM02833r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - references: PMID:14532297
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06703
@@ -145257,6 +145477,13 @@
       - MAM02630r: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Retinol metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.14.-.-
+    - references: PMID:14532297
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06704
@@ -148401,6 +148628,12 @@
       - MAM02553c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Lysine metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 1.2.1.47
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR06982
@@ -169763,6 +169996,9 @@
       - MAM01599m: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Transport reactions
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR08615
@@ -169775,6 +170011,12 @@
       - MAM02553m: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Vitamin B12 metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 2.5.1.17
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR08616
@@ -169787,6 +170029,12 @@
       - MAM03057m: 1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
+    - subsystem:
+      - Vitamin B12 metabolism
+    - annotation: !!omap
+      - ec-code:
+        - 2.5.1.17
+    - confidence_score: 0.0
     - notes: reaction added by gap filling
   - !!omap
     - id: MAR08617
